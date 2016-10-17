@@ -85,5 +85,20 @@ fos_elastica:
                         finder: ~
                         provider: ~
                         listener: ~
+        product:
+            finder: ~
+            types:
+                user:
+                    mappings:
+                        username: ~
+                        firstName: ~
+                        lastName: ~
+                        email: ~
+                    persistence:
+                        driver: orm
+                        model: AppBundle\Entity\Product
+                        finder: ~
+                        provider: ~
+                        listener: ~
 
 

@@ -16,7 +16,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         
-        $finder = $this->container->get('fos_elastica.finder.user');
+        $finder = $this->container->get('fos_elastica.finder.product');
         
         $results = $finder->find('xxx');
         
@@ -25,7 +25,7 @@ class DefaultController extends Controller
         $keywordQuery = new QueryString();
         $keywordQuery->setQuery("*t*");
 
-        $query = new Query();
+        $query = new Query();   
         $query->setQuery($keywordQuery);
 
         $articles = $finder->find($query);
