@@ -23,7 +23,7 @@ class DefaultController extends Controller
         
         // find articles with "like" query
         $keywordQuery = new QueryString();
-        $keywordQuery->setQuery("*t*");
+        $keywordQuery->setQuery("*b*");
 
         $query = new Query();   
         $query->setQuery($keywordQuery);
