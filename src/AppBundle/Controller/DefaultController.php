@@ -16,9 +16,9 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         
-        $finder = $this->container->get('fos_elastica.finder.product');
+        $finder = $this->container->get('fos_elastica.finder.user');
         
-        $results = $finder->find('xxx');
+        $results = $finder->find('wwww');
         
         
         // find articles with "like" query
@@ -32,7 +32,7 @@ class DefaultController extends Controller
         
         dump($articles);
         
-        
+       // dump($results);
         exit;
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(

@@ -90,10 +90,8 @@ fos_elastica:
             types:
                 user:
                     mappings:
-                        username: ~
-                        firstName: ~
-                        lastName: ~
-                        email: ~
+                        name: ~
+                        description: ~
                     persistence:
                         driver: orm
                         model: AppBundle\Entity\Product
